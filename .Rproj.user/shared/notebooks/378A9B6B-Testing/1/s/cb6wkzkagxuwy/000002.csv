@@ -1,0 +1,1 @@
+"0","plot(mtcars$mpg, mtcars$hp, xlab = ""MPG"", ylab = ""Horsepower"")"
