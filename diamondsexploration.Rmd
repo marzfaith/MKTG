@@ -1,0 +1,22 @@
+---
+title: "Diamonds Exploration"
+author: "Marissa"
+date: "2/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Reading the excel file
+
+```{r}
+library(readxl)
+mydiamonds<-read_excel("diamonds.xlsx")
+```
+
+
+
+
+

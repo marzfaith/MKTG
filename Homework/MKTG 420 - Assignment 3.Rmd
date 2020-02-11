@@ -3,8 +3,8 @@ title: "Assignment 3"
 author: "Marissa"
 date: "2/10/2020"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 # Effectively Communicating Numbers: Selecting the Best Means and Manner of Display

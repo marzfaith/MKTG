@@ -1,0 +1,36 @@
+---
+title: "Chapter 5 Week 4"
+author: "Marissa"
+date: "2/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(nycflights13)
+library(tidyverse)
+```
+
+## Exploring Basic Data Manipulation
+```{r}
+nycflights13::flights
+```
+### Filter rows with filter()
+Allows to subset observations based on their values
+First argument: name of data frame
+Second argument +: expressions that filter the data frame
+```{r}
+filter(flights, month == 1, day == 1)
+```
+The arrow saves the results
+```{r}
+jan1 <- filter(flights, month == 1, day == 1)
+```
+The arrow and parentheses saves AND prints the results
+```{r}
+(dec25 <- filter(flights, month == 12, day == 25))
+```
+
