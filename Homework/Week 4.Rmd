@@ -8,11 +8,13 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# Chapter 12 Tidy Data Notes
 
+#### 12.1.1 Prerequisites
 ```{r}
 library(tidyverse)
 ```
-# 12.2 Tidy Data
+### 12.2 Tidy Data
 ```{r}
 # runs the tables
 table1
@@ -27,6 +29,11 @@ table4b
 
 ```
 
+Dataset Tidy:
+Each variable must have its own column
+Each observation must have its own row
+Each value must have its own cell
+
 ```{r}
 # Compute rate per 10,000
 table1 %>% 
@@ -38,12 +45,58 @@ table1 %>%
 ```
 
 ## 12.2.1 Exercises
-1.
-2.
+```{r}
+#1 Using prose, describe how the variables and observations are organised in each of the sample tables.
 
-# 12.3 Pivoting
+#Columns are their own variables, meaning year only has year or country only has a country.
+table1
 
-## 12.3.1 Longer
+# Combined columns, such as cases and population in the type column.
+table2
+
+# Rate is a combine column of separated by a /.
+table3
+
+# Contains the cases, with the the years separated into separate columns.
+table4a 
+
+# Contains the population.
+table4b 
+
+```
+
+```{r}
+#2 Compute the rate for table2, and table 4a+table 4b. 
+  #1 Extract the bumber of TB case per country per year.
+  #2 Extract the matching population per country per year.
+  #3 Divide the cases by population and mulitply by 1000
+  #4 Sore back in the appropraite place
+# Which representation is easiest to work with? Which is hardest? Why?
+
+#Table2
+cases <- table2 %>%
+  filter(type == "cases")
+populations <- table2 %>%
+  filter(type == "population")
+merged <- cbind(cases, populations)
+merged$rates= (cases$count / populations$count)*1000
+merged
+
+#Tables4
+rates_99 <- (table4a$`1999` / table4b$`1999`)*1000
+rates_00 <- (table4a$`2000`/ table4b$`2000`)*1000
+new <- table4a['country']
+new$rates_00 = rates_00
+new$rates_99 = rates_99
+new
+
+#Table 4a and 4b were easier to work with, whereas Table 2 had to be separated and filter before doing any of the calculations.
+```
+
+
+### 12.3 Pivoting
+
+#### 12.3.1 Longer
 A common problem is a dataset where some of the column names are not names of variables, but values of a variable.
 
 pivot_longer() makes wide tables narrower and longer
@@ -70,7 +123,7 @@ tidy4b <- table4b %>%
 left_join(tidy4a, tidy4b)
 ```
 
-## 12.3.2 Wider
+#### 12.3.2 Wider
 pivot_wider() is the opposite of pivot_longer(). You use it when an observation is scattered across multiple rows.
 
 pivot_wider() makes long tables shorter and wider.
@@ -82,8 +135,8 @@ table2 %>%
 ```
 
 ## 12.3.3 Exercises
-1.
 ```{r}
+#1 Why are pivot_longer and pivot_wider not perfectly symmetrical?
 stocks <- tibble(
   year   = c(2015, 2015, 2016, 2016),
   half  = c(   1,    2,     1,    2),
@@ -92,16 +145,20 @@ stocks <- tibble(
 stocks %>% 
   pivot_wider(names_from = year, values_from = return) %>% 
   pivot_longer(`2015`:`2016`, names_to = "year", values_to = "return")
+# Since the shape of the original tibble has changed and the orignal placement of columns and values. Pivot_wider() creates each year as it's own column instead of a double value column.
 ```
 
-2.
 ```{r}
+#2 Why does this code fail?
+
 #table4a %>% 
- # pivot_longer(c(1999, 2000), names_to = "year", values_to = "cases")
+#  pivot_longer(c(1999, 2000), names_to = "year", values_to = "cases")
+
+# Fails because we tried to use column names as integers
 ```
 
-3.
 ```{r}
+#3 Why would happen if you widen this table? Why? How could you add a new column to uniquely identify each value?
 people <- tribble(
   ~name,             ~names,  ~values,
   #-----------------|--------|------
@@ -111,20 +168,27 @@ people <- tribble(
   "Jessica Cordero", "age",       37,
   "Jessica Cordero", "height",   156
 )
+# Receive an error when trying to widen the table, due to the duplication of names. To avoid the error, I would create columns for age and one for height.
+people %>%
+  pivot_wider(names_from = names, values_from = values)
+
 ```
 
-4.
 ```{r}
+#4 Tidy the simple tibble below. Do you need to make it wider or longer? What are the variables?
 preg <- tribble(
   ~pregnant, ~male, ~female,
   "yes",     NA,    10,
   "no",      20,    12
 )
+
+preg%>%
+  pivot_longer(c('male','female'), names_to="sex",values_to=)
 ```
 
-# 12.4 Separating and Uniting
+### 12.4 Separating and Uniting
 
-## 12.4.1 Separate
+#### 12.4.1 Separate
 separate() pulls apart one column into multiple columns, by splitting wherever a separator character appears.
 ```{r}
 table3
@@ -146,9 +210,263 @@ table3 %>%
   separate(year, into = c("century", "year"), sep = 2)
 ```
 
-## 12.4.2 Unite
+#### 12.4.2 Unite
+unite() is the inverse of separate(): it combines multiple columns into a single column
+```{r}
+table5 %>% 
+  unite(new, century, year)
+```
+
+```{r}
+table5 %>% 
+  unite(new, century, year, sep = "")
+```
+
+## 12.4.3 Exercises
+```{r}
+#1 What do the extra and fill arguments do in separate()? Experiment with the various options for the following two toy datasets.
+
+# The extra argument 'g'. The extra tells what to do if there are too many
+tibble(x = c("a,b,c", "d,e,f,g", "h,i,j")) %>% 
+  separate(x, c("one", "two", "three"), extra = "drop")
+
+tibble(x = c("a,b,c", "d,e,f,g", "h,i,j")) %>% 
+  separate(x, c("one", "two", "three"), extra = "merge")
+
+# The fill argument 'f'. The fill argument tells it what to do if there is something missing.
+tibble(x = c("a,b,c", "d,e", "f,g,i")) %>% 
+  separate(x, c("one", "two", "three"))
+```
+
+```{r}
+#2 Both unite() and separate() have a remove argument. What does it do? Why would you set it to FALSE?
+
+#The remove argument removes/discards the columns used to either unite or separate. Setting it to FALSE, keeps the original columns.
+```
+
+```{r}
+#3 Compare and contrast separate() and extract(). Why are there three variations of separation (position, separator, groups), but only one unite?
+
+# Separate() splits a column into multiple columns.
+# Extract() splits a column into multuple columns as well.
+# Separate and Extract both start with a single column broken into several columns.
+# Unite takes multiple columns converts it into a single column.
+```
+
+### 12.5 Missing Values
+* Explicitly, i.e. flagged with NA.
+* Implicitly, i.e. simply not present in the data.
+```{r}
+# Missing two values
+stocks <- tibble(
+  year   = c(2015, 2015, 2015, 2015, 2016, 2016, 2016),
+  qtr    = c(   1,    2,    3,    4,    2,    3,    4),
+  return = c(1.88, 0.59, 0.35,   NA, 0.92, 0.17, 2.66)
+)
+```
+
+```{r}
+stocks %>% 
+  pivot_wider(names_from = year, values_from = return)
+```
+
+```{r}
+stocks %>% 
+  pivot_wider(names_from = year, values_from = return) %>% 
+  pivot_longer(
+    cols = c(`2015`, `2016`), 
+    names_to = "year", 
+    values_to = "return", 
+    values_drop_na = TRUE
+  )
+```
+
+```{r}
+stocks %>% 
+  complete(year, qtr)
+```
+
+```{r}
+treatment <- tribble(
+  ~ person,           ~ treatment, ~response,
+  "Derrick Whitmore", 1,           7,
+  NA,                 2,           10,
+  NA,                 3,           9,
+  "Katherine Burke",  1,           4
+)
+```
+
+```{r}
+# Fill takes a set of columns where you want missing values to be replaced by the most recent non-missing value (sometimes called last observation carried forward).
+treatment %>% 
+  fill(person)
+```
+
+## 12.5.1 Exercises
+```{r}
+#1 Compare and contrast fill arguments to pivot_wider() and complete().
+
+treatment <- tribble(
+  ~ person,           ~ treatment, ~response,
+  "Derrick Whitmore", 1,           7,
+  NA,                 2,           10,
+  NA,                 3,           9,
+  "Katherine Burke",  1,           4
+)
+
+# Carries Derrick Whitmore to fill in the NA in person
+treatment %>% 
+  fill(person)
+
+# Creates an error there is missing data from the person column. Must do pivot_longer() as well to drop the NA values.
+
+#pivot_wider(names_from = person, values_from = response)
+
+# Finds unique values and creates several NA in person
+treatment %>%
+  complete(treatment, response)
+```
+
+```{r}
+#2 What does the direction argument to fill() do?
+
+# The direction tells it in which direction it should take the last data to fill in the blanks with.
 
 
+treatment <- tribble(
+  ~ person,           ~ treatment, ~response,
+  "Derrick Whitmore", 1,           7,
+  NA,                 2,           10,
+  NA,                 3,           9,
+  "Katherine Burke",  1,           4
+)
 
+# Carries Katherine Burke to fill in the NA
+fill(treatment, person, .direction = "up")
+```
 
+### 12.6 Case Study
+```{r}
+who
+```
 
+```{r}
+# Focus on the values that are present and create new colum names.
+who1 <- who %>% 
+  pivot_longer(
+    cols = new_sp_m014:newrel_f65, 
+    names_to = "key", 
+    values_to = "cases", 
+    values_drop_na = TRUE
+  )
+who1
+```
+
+```{r}
+# Structure of the values
+who1 %>% 
+  count(key)
+```
+* First three letters of each column denote new or old cases of TB.
+* Next two letters describe the type of TB:
+  + rel = relapse
+  + ep = extrapulmonary TB
+  + sn = smear negative
+  + sp = smear positive
+* Sixth letter gives the sex of the patient. M = male; F = female
+* Numbers represent the age:
+  + 014 = 0 – 14 years old
+  + 1524 = 15 – 24 years old
+  + 2534 = 25 – 34 years old
+  + 3544 = 35 – 44 years old
+  + 4554 = 45 – 54 years old
+  + 5564 = 55 – 64 years old
+  + 65 = 65 or older
+
+```{r}
+# Fixes variable names that are inconsistent
+who2 <- who1 %>% 
+  mutate(names_from = stringr::str_replace(key, "newrel", "new_rel"))
+who2
+```
+
+```{r}
+# Separates at each underscore
+who3 <- who2 %>% 
+  separate(key, c("new", "type", "sexage"), sep = "_")
+
+who3
+```
+
+```{r}
+who3 %>% 
+  count(new)
+```
+
+```{r}
+# Drops columns
+who4 <- who3 %>% 
+  select(-new, -iso2, -iso3)
+```
+
+```{r}
+# Separates sexage into sex and age
+who5 <- who4 %>% 
+  separate(sexage, c("sex", "age"), sep = 1)
+
+who5
+```
+
+```{r}
+# TIDY DATASET
+who %>%
+  pivot_longer(
+    cols = new_sp_m014:newrel_f65, 
+    names_to = "key", 
+    values_to = "cases", 
+    values_drop_na = TRUE
+  ) %>% 
+  mutate(
+    key = stringr::str_replace(key, "newrel", "new_rel")
+  ) %>%
+  separate(key, c("new", "var", "sexage")) %>% 
+  select(-new, -iso2, -iso3) %>% 
+  separate(sexage, c("sex", "age"), sep = 1)
+```
+
+## 12.6.1 Exercises
+```{r}
+#1 In this case study I set values_drop_na = TRUE just to make it easier to check that we had the correct values. Is this reasonable? Think about how missing values are represented in this dataset. Are there implicit missing values? What's the difference between an NA and 0?
+
+# values_drop_na = TRUE may be reasonable depending on no cases of TB were represented. If there are no 0s in the dataset, then NA may represent no cases of TB. Therefore dropping the NA values skews the data. 0 is an integer while NA means a blank in the dataset.
+```
+
+```{r}
+#2 What happens if you neglect the mutate() step?
+#(mutate(names_from = stringr::str_replace(key, "newrel", "new_rel")))
+
+# The mutate steps replaces the variable name with new_rel for consistency purposes and to avoid following errors. It allows for the separation at the '_' in the following step to avoid multiple columns.
+```
+
+```{r}
+#3 I claimed that iso2 and iso3 were redundant with country. Confirm this claim.
+
+select(who3, country, iso2, iso3) %>%
+  distinct() %>%
+  group_by(country) %>%
+  filter(n() > 1)
+```
+
+```{r}
+#4 For each country, year, and sex compute the total number of cases of TB.
+
+who5 %>%
+  group_by(country, year, sex) %>%
+  summarise(cases = sum(cases))
+
+```
+
+### 12.7 Non-Tidy Data
+Two main reasons to use other data structures:
+Alternative representations may have substantial performance or space advantages.
+Specialised fields have evolved their own conventions for storing data that may be quite different to the conventions of tidy data.

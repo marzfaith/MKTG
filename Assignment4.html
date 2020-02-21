@@ -12,7 +12,7 @@
 <meta name="author" content="Marissa" />
 
 
-<title>Chapter 12 Week 4</title>
+<title>Assignment 4</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -362,9 +362,9 @@ summary {
 
 
 
-<h1 class="title toc-ignore">Chapter 12 Week 4</h1>
+<h1 class="title toc-ignore">Assignment 4</h1>
 <h4 class="author">Marissa</h4>
-<h4 class="date">2/10/2020</h4>
+<h4 class="date">2/20/2020</h4>
 
 </div>
 
@@ -1210,7 +1210,1676 @@ who5 %&gt;%
 <div id="non-tidy-data" class="section level3">
 <h3>12.7 Non-Tidy Data</h3>
 <p>Two main reasons to use other data structures: Alternative representations may have substantial performance or space advantages. Specialised fields have evolved their own conventions for storing data that may be quite different to the conventions of tidy data.</p>
+<pre class="r"><code>library(nycflights13)
+library(tidyverse)</code></pre>
 </div>
+</div>
+</div>
+<div id="notes-chapter-5-data-transformation" class="section level1">
+<h1>Notes: Chapter 5 Data Transformation</h1>
+<pre class="r"><code>nycflights13::flights</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<div id="filter-rows-with-filter" class="section level3">
+<h3>5.2 Filter rows with filter()</h3>
+<p>Allows to subset observations based on their values First argument: name of data frame Second argument +: expressions that filter the data frame</p>
+<pre class="r"><code>filter(flights, month == 1, day == 1)</code></pre>
+<pre><code>## # A tibble: 842 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 832 more rows, and 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;,
+## #   distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<p>The arrow saves the results</p>
+<pre class="r"><code>jan1 &lt;- filter(flights, month == 1, day == 1)</code></pre>
+<p>The arrow and parentheses saves AND prints the results</p>
+<pre class="r"><code>(dec25 &lt;- filter(flights, month == 12, day == 25))</code></pre>
+<pre><code>## # A tibble: 719 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013    12    25      456            500        -4      649            651
+##  2  2013    12    25      524            515         9      805            814
+##  3  2013    12    25      542            540         2      832            850
+##  4  2013    12    25      546            550        -4     1022           1027
+##  5  2013    12    25      556            600        -4      730            745
+##  6  2013    12    25      557            600        -3      743            752
+##  7  2013    12    25      557            600        -3      818            831
+##  8  2013    12    25      559            600        -1      855            856
+##  9  2013    12    25      559            600        -1      849            855
+## 10  2013    12    25      600            600         0      850            846
+## # … with 709 more rows, and 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;,
+## #   distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<div id="comparisons" class="section level4">
+<h4>5.2.1 Comparisons</h4>
+<p>R provides the standard suite: &gt;, &gt;=, &lt;, &lt;=, != (not equal), and == (equal)</p>
+</div>
+<div id="logical-operators" class="section level4">
+<h4>5.2.2 Logical Operators</h4>
+<pre class="r"><code># Finds all flights departed in November or December
+filter(flights, month == 11 | month == 12)</code></pre>
+<pre><code>## # A tibble: 55,403 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013    11     1        5           2359         6      352            345
+##  2  2013    11     1       35           2250       105      123           2356
+##  3  2013    11     1      455            500        -5      641            651
+##  4  2013    11     1      539            545        -6      856            827
+##  5  2013    11     1      542            545        -3      831            855
+##  6  2013    11     1      549            600       -11      912            923
+##  7  2013    11     1      550            600       -10      705            659
+##  8  2013    11     1      554            600        -6      659            701
+##  9  2013    11     1      554            600        -6      826            827
+## 10  2013    11     1      554            600        -6      749            751
+## # … with 55,393 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># Shorthand for the code above
+nov_dec &lt;- filter(flights, month %in% c(11, 12))</code></pre>
+<pre class="r"><code># Simplifed complicated subsetting by rem
+filter(flights, !(arr_delay &gt; 120 | dep_delay &gt; 120))</code></pre>
+<pre><code>## # A tibble: 316,050 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 316,040 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>filter(flights, arr_delay &lt;= 120, dep_delay &lt;= 120)</code></pre>
+<pre><code>## # A tibble: 316,050 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 316,040 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+</div>
+<div id="missing-values-1" class="section level4">
+<h4>5.2.3 Missing Values</h4>
+<p>NA represents an unknown value</p>
+<pre class="r"><code>df &lt;- tibble(x = c(1, NA, 3))
+filter(df, x &gt; 1)</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##       x
+##   &lt;dbl&gt;
+## 1     3</code></pre>
+<pre class="r"><code>#this showcases both the FALSE and NA values explicitly
+filter(df, is.na(x) | x &gt; 1)</code></pre>
+<pre><code>## # A tibble: 2 x 1
+##       x
+##   &lt;dbl&gt;
+## 1    NA
+## 2     3</code></pre>
+</div>
+</div>
+<div id="exercises-5" class="section level2">
+<h2>5.2.4 Exercises</h2>
+<pre class="r"><code># 1.1 Had an arrival delay of two or more hours
+filter(flights, arr_delay &gt;= 120)</code></pre>
+<pre><code>## # A tibble: 10,200 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      811            630       101     1047            830
+##  2  2013     1     1      848           1835       853     1001           1950
+##  3  2013     1     1      957            733       144     1056            853
+##  4  2013     1     1     1114            900       134     1447           1222
+##  5  2013     1     1     1505           1310       115     1638           1431
+##  6  2013     1     1     1525           1340       105     1831           1626
+##  7  2013     1     1     1549           1445        64     1912           1656
+##  8  2013     1     1     1558           1359       119     1718           1515
+##  9  2013     1     1     1732           1630        62     2028           1825
+## 10  2013     1     1     1803           1620       103     2008           1750
+## # … with 10,190 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.2 Flew to Houston (IAH to HOU)
+filter(flights, origin == &quot;IAH&quot;, dest == &quot;HOU&quot;)</code></pre>
+<pre><code>## # A tibble: 0 x 19
+## # … with 19 variables: year &lt;int&gt;, month &lt;int&gt;, day &lt;int&gt;, dep_time &lt;int&gt;,
+## #   sched_dep_time &lt;int&gt;, dep_delay &lt;dbl&gt;, arr_time &lt;int&gt;,
+## #   sched_arr_time &lt;int&gt;, arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,
+## #   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,
+## #   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.3 Were operated by United, American, or Delta
+filter(flights, carrier %in% c(&quot;UA&quot;,&quot;AA&quot;,&quot;DL&quot;))</code></pre>
+<pre><code>## # A tibble: 139,504 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      554            600        -6      812            837
+##  5  2013     1     1      554            558        -4      740            728
+##  6  2013     1     1      558            600        -2      753            745
+##  7  2013     1     1      558            600        -2      924            917
+##  8  2013     1     1      558            600        -2      923            937
+##  9  2013     1     1      559            600        -1      941            910
+## 10  2013     1     1      559            600        -1      854            902
+## # … with 139,494 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.4 Departed in Summer (July(7), August(8), September(9))
+filter(flights, month %in% 7:9)</code></pre>
+<pre><code>## # A tibble: 86,326 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7     1        1           2029       212      236           2359
+##  2  2013     7     1        2           2359         3      344            344
+##  3  2013     7     1       29           2245       104      151              1
+##  4  2013     7     1       43           2130       193      322             14
+##  5  2013     7     1       44           2150       174      300            100
+##  6  2013     7     1       46           2051       235      304           2358
+##  7  2013     7     1       48           2001       287      308           2305
+##  8  2013     7     1       58           2155       183      335             43
+##  9  2013     7     1      100           2146       194      327             30
+## 10  2013     7     1      100           2245       135      337            135
+## # … with 86,316 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.5 Arrived more than 2 hours late, but didn't leave late
+filter(flights, arr_delay &gt; 120, dep_delay &lt;= 0)</code></pre>
+<pre><code>## # A tibble: 29 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1    27     1419           1420        -1     1754           1550
+##  2  2013    10     7     1350           1350         0     1736           1526
+##  3  2013    10     7     1357           1359        -2     1858           1654
+##  4  2013    10    16      657            700        -3     1258           1056
+##  5  2013    11     1      658            700        -2     1329           1015
+##  6  2013     3    18     1844           1847        -3       39           2219
+##  7  2013     4    17     1635           1640        -5     2049           1845
+##  8  2013     4    18      558            600        -2     1149            850
+##  9  2013     4    18      655            700        -5     1213            950
+## 10  2013     5    22     1827           1830        -3     2217           2010
+## # … with 19 more rows, and 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;,
+## #   distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.6 Were delayed by at least an hour, but made up over 30 mins in flight
+filter(flights, dep_delay &gt;= 60, dep_delay - arr_delay &gt; 30)</code></pre>
+<pre><code>## # A tibble: 1,844 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1     2205           1720       285       46           2040
+##  2  2013     1     1     2326           2130       116      131             18
+##  3  2013     1     3     1503           1221       162     1803           1555
+##  4  2013     1     3     1839           1700        99     2056           1950
+##  5  2013     1     3     1850           1745        65     2148           2120
+##  6  2013     1     3     1941           1759       102     2246           2139
+##  7  2013     1     3     1950           1845        65     2228           2227
+##  8  2013     1     3     2015           1915        60     2135           2111
+##  9  2013     1     3     2257           2000       177       45           2224
+## 10  2013     1     4     1917           1700       137     2135           1950
+## # … with 1,834 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 1.7 Departed between midnight and 6am (inclusive)
+filter(flights, dep_time &gt;= 2400 | dep_time &lt;= 600)</code></pre>
+<pre><code>## # A tibble: 9,373 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 9,363 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># 2. Another usful dplyr filtering helper is between(). What does it do? Can you use it simplify the code needed to answer the previous challenge?
+
+#The between() function finds the flights that occur between the variables, such as the summer months in problem 1.4. 
+filter(flights, between(month, 7,9))</code></pre>
+<pre><code>## # A tibble: 86,326 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7     1        1           2029       212      236           2359
+##  2  2013     7     1        2           2359         3      344            344
+##  3  2013     7     1       29           2245       104      151              1
+##  4  2013     7     1       43           2130       193      322             14
+##  5  2013     7     1       44           2150       174      300            100
+##  6  2013     7     1       46           2051       235      304           2358
+##  7  2013     7     1       48           2001       287      308           2305
+##  8  2013     7     1       58           2155       183      335             43
+##  9  2013     7     1      100           2146       194      327             30
+## 10  2013     7     1      100           2245       135      337            135
+## # … with 86,316 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#3 How many flights have a missing dep_time? What other variables are missing? What might these rows represent?
+
+#The arrival time, depart time, air time, and depart delay are all missing. This could imply the flight had been cancelled.
+filter(flights, is.na(dep_time))</code></pre>
+<pre><code>## # A tibble: 8,255 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1       NA           1630        NA       NA           1815
+##  2  2013     1     1       NA           1935        NA       NA           2240
+##  3  2013     1     1       NA           1500        NA       NA           1825
+##  4  2013     1     1       NA            600        NA       NA            901
+##  5  2013     1     2       NA           1540        NA       NA           1747
+##  6  2013     1     2       NA           1620        NA       NA           1746
+##  7  2013     1     2       NA           1355        NA       NA           1459
+##  8  2013     1     2       NA           1420        NA       NA           1644
+##  9  2013     1     2       NA           1321        NA       NA           1536
+## 10  2013     1     2       NA           1545        NA       NA           1910
+## # … with 8,245 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#4 Why is NA ^ 0 not missing? Why is NA | TRUE not missing? Why is FALSE &amp; NA not missing? Can you figure out the general rule?
+
+NA ^ 0</code></pre>
+<pre><code>## [1] 1</code></pre>
+<pre class="r"><code># Equals 1 always
+
+NA | TRUE</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code># True is always true
+
+NA &amp; FALSE</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code># False is always false
+
+#NA * 0 is not equal to 0, because the NA represents infinity and is undefined.</code></pre>
+<div id="arrange-rows-with-arrange" class="section level3">
+<h3>5.3 Arrange Rows with Arrange()</h3>
+<p>Arrange() is similiar to filter(); but changes the order</p>
+<pre class="r"><code>arrange(flights, year, month, day)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#orders columns in descending order
+arrange(flights, desc(dep_delay))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     6    15     1432           1935      1137     1607           2120
+##  3  2013     1    10     1121           1635      1126     1239           1810
+##  4  2013     9    20     1139           1845      1014     1457           2210
+##  5  2013     7    22      845           1600      1005     1044           1815
+##  6  2013     4    10     1100           1900       960     1342           2211
+##  7  2013     3    17     2321            810       911      135           1020
+##  8  2013     6    27      959           1900       899     1236           2226
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013    12     5      756           1700       896     1058           2020
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#missing values are sorted at the end
+df &lt;- tibble(x = c(5, 2, NA))
+arrange(df, x)</code></pre>
+<pre><code>## # A tibble: 3 x 1
+##       x
+##   &lt;dbl&gt;
+## 1     2
+## 2     5
+## 3    NA</code></pre>
+<pre class="r"><code>arrange(df, desc(x))</code></pre>
+<pre><code>## # A tibble: 3 x 1
+##       x
+##   &lt;dbl&gt;
+## 1     5
+## 2     2
+## 3    NA</code></pre>
+</div>
+</div>
+<div id="exercises-6" class="section level2">
+<h2>5.3.1 Exercises</h2>
+<pre class="r"><code>#1 How could you use arrange() to sort all missing values to the start?
+arrange(flights, desc(is.na(dep_time)), dep_time)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1       NA           1630        NA       NA           1815
+##  2  2013     1     1       NA           1935        NA       NA           2240
+##  3  2013     1     1       NA           1500        NA       NA           1825
+##  4  2013     1     1       NA            600        NA       NA            901
+##  5  2013     1     2       NA           1540        NA       NA           1747
+##  6  2013     1     2       NA           1620        NA       NA           1746
+##  7  2013     1     2       NA           1355        NA       NA           1459
+##  8  2013     1     2       NA           1420        NA       NA           1644
+##  9  2013     1     2       NA           1321        NA       NA           1536
+## 10  2013     1     2       NA           1545        NA       NA           1910
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#2 Sort flights to find the most delayed flights. Find the flights that left earliest.
+
+#most delayed
+arrange(flights, desc(dep_delay))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     6    15     1432           1935      1137     1607           2120
+##  3  2013     1    10     1121           1635      1126     1239           1810
+##  4  2013     9    20     1139           1845      1014     1457           2210
+##  5  2013     7    22      845           1600      1005     1044           1815
+##  6  2013     4    10     1100           1900       960     1342           2211
+##  7  2013     3    17     2321            810       911      135           1020
+##  8  2013     6    27      959           1900       899     1236           2226
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013    12     5      756           1700       896     1058           2020
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#left earliest
+arrange(flights, dep_delay)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013    12     7     2040           2123       -43       40           2352
+##  2  2013     2     3     2022           2055       -33     2240           2338
+##  3  2013    11    10     1408           1440       -32     1549           1559
+##  4  2013     1    11     1900           1930       -30     2233           2243
+##  5  2013     1    29     1703           1730       -27     1947           1957
+##  6  2013     8     9      729            755       -26     1002            955
+##  7  2013    10    23     1907           1932       -25     2143           2143
+##  8  2013     3    30     2030           2055       -25     2213           2250
+##  9  2013     3     2     1431           1455       -24     1601           1631
+## 10  2013     5     5      934            958       -24     1225           1309
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#3 Sort flights to find the fastest(highest speed) flights.
+arrange(flights, air_time)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1    16     1355           1315        40     1442           1411
+##  2  2013     4    13      537            527        10      622            628
+##  3  2013    12     6      922            851        31     1021            954
+##  4  2013     2     3     2153           2129        24     2247           2224
+##  5  2013     2     5     1303           1315       -12     1342           1411
+##  6  2013     2    12     2123           2130        -7     2211           2225
+##  7  2013     3     2     1450           1500       -10     1547           1608
+##  8  2013     3     8     2026           1935        51     2131           2056
+##  9  2013     3    18     1456           1329        87     1533           1426
+## 10  2013     3    19     2226           2145        41     2305           2246
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#4 Which flights travelled the farthest? Which travlled the shortest?
+
+# travelled the farthest
+arrange(flights, desc(distance))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      857            900        -3     1516           1530
+##  2  2013     1     2      909            900         9     1525           1530
+##  3  2013     1     3      914            900        14     1504           1530
+##  4  2013     1     4      900            900         0     1516           1530
+##  5  2013     1     5      858            900        -2     1519           1530
+##  6  2013     1     6     1019            900        79     1558           1530
+##  7  2013     1     7     1042            900       102     1620           1530
+##  8  2013     1     8      901            900         1     1504           1530
+##  9  2013     1     9      641            900      1301     1242           1530
+## 10  2013     1    10      859            900        -1     1449           1530
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># travelled the shortest
+arrange(flights, distance)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7    27       NA            106        NA       NA            245
+##  2  2013     1     3     2127           2129        -2     2222           2224
+##  3  2013     1     4     1240           1200        40     1333           1306
+##  4  2013     1     4     1829           1615       134     1937           1721
+##  5  2013     1     4     2128           2129        -1     2218           2224
+##  6  2013     1     5     1155           1200        -5     1241           1306
+##  7  2013     1     6     2125           2129        -4     2224           2224
+##  8  2013     1     7     2124           2129        -5     2212           2224
+##  9  2013     1     8     2127           2130        -3     2304           2225
+## 10  2013     1     9     2126           2129        -3     2217           2224
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<div id="select-columns-with-select" class="section level3">
+<h3>5.4 Select Columns with Select()</h3>
+<p>Select() allows you to zoom in on useful subset using operations based on the names of the variables</p>
+<pre class="r"><code>select(flights, year, month, day)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##     year month   day
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1  2013     1     1
+##  2  2013     1     1
+##  3  2013     1     1
+##  4  2013     1     1
+##  5  2013     1     1
+##  6  2013     1     1
+##  7  2013     1     1
+##  8  2013     1     1
+##  9  2013     1     1
+## 10  2013     1     1
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code>select(flights, year:day)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##     year month   day
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1  2013     1     1
+##  2  2013     1     1
+##  3  2013     1     1
+##  4  2013     1     1
+##  5  2013     1     1
+##  6  2013     1     1
+##  7  2013     1     1
+##  8  2013     1     1
+##  9  2013     1     1
+## 10  2013     1     1
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code>select(flights, -(year:day))</code></pre>
+<pre><code>## # A tibble: 336,776 x 16
+##    dep_time sched_dep_time dep_delay arr_time sched_arr_time arr_delay carrier
+##       &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt; &lt;chr&gt;  
+##  1      517            515         2      830            819        11 UA     
+##  2      533            529         4      850            830        20 UA     
+##  3      542            540         2      923            850        33 AA     
+##  4      544            545        -1     1004           1022       -18 B6     
+##  5      554            600        -6      812            837       -25 DL     
+##  6      554            558        -4      740            728        12 UA     
+##  7      555            600        -5      913            854        19 B6     
+##  8      557            600        -3      709            723       -14 EV     
+##  9      557            600        -3      838            846        -8 B6     
+## 10      558            600        -2      753            745         8 AA     
+## # … with 336,766 more rows, and 9 more variables: flight &lt;int&gt;, tailnum &lt;chr&gt;,
+## #   origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;,
+## #   minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<ul>
+<li><p>starts_with(“abc”): matches names that begin with “abc”.</p></li>
+<li><p>ends_with(“xyz”): matches names that end with “xyz”.</p></li>
+<li><p>contains(“ijk”): matches names that contain “ijk”.</p></li>
+<li><p>matches(“(.)\1”): selects variables that match a regular expression. This one matches any variables that contain repeated characters. You’ll learn more about regular expressions in strings.</p></li>
+<li><p>num_range(“x”, 1:3): matches x1, x2 and x3.</p></li>
+</ul>
+<pre class="r"><code># renames the values
+rename(flights, tail_num = tailnum)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tail_num &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># moves to the start of the data
+select(flights, time_hour, air_time, everything())</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##    time_hour           air_time  year month   day dep_time sched_dep_time
+##    &lt;dttm&gt;                 &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;
+##  1 2013-01-01 05:00:00      227  2013     1     1      517            515
+##  2 2013-01-01 05:00:00      227  2013     1     1      533            529
+##  3 2013-01-01 05:00:00      160  2013     1     1      542            540
+##  4 2013-01-01 05:00:00      183  2013     1     1      544            545
+##  5 2013-01-01 06:00:00      116  2013     1     1      554            600
+##  6 2013-01-01 05:00:00      150  2013     1     1      554            558
+##  7 2013-01-01 06:00:00      158  2013     1     1      555            600
+##  8 2013-01-01 06:00:00       53  2013     1     1      557            600
+##  9 2013-01-01 06:00:00      140  2013     1     1      557            600
+## 10 2013-01-01 06:00:00      138  2013     1     1      558            600
+## # … with 336,766 more rows, and 12 more variables: dep_delay &lt;dbl&gt;,
+## #   arr_time &lt;int&gt;, sched_arr_time &lt;int&gt;, arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, distance &lt;dbl&gt;,
+## #   hour &lt;dbl&gt;, minute &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<div id="exercises-7" class="section level2">
+<h2>5.4.1 Exercises</h2>
+<pre class="r"><code>#1 Brainstorm as many ways as possible to select dep_time, dep_delay, arr_time, and arr_delay from flights.
+
+select(flights, dep_time, dep_delay, arr_time, arr_delay)</code></pre>
+<pre><code>## # A tibble: 336,776 x 4
+##    dep_time dep_delay arr_time arr_delay
+##       &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+##  1      517         2      830        11
+##  2      533         4      850        20
+##  3      542         2      923        33
+##  4      544        -1     1004       -18
+##  5      554        -6      812       -25
+##  6      554        -4      740        12
+##  7      555        -5      913        19
+##  8      557        -3      709       -14
+##  9      557        -3      838        -8
+## 10      558        -2      753         8
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code>#2 What happens if you include the name of a variable multiple times in a select() call?
+
+select(flights, year, month, month)</code></pre>
+<pre><code>## # A tibble: 336,776 x 2
+##     year month
+##    &lt;int&gt; &lt;int&gt;
+##  1  2013     1
+##  2  2013     1
+##  3  2013     1
+##  4  2013     1
+##  5  2013     1
+##  6  2013     1
+##  7  2013     1
+##  8  2013     1
+##  9  2013     1
+## 10  2013     1
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code># it ignores the duplication and only incldues the variable once</code></pre>
+<pre class="r"><code>#3 What does the one_of() function do? Why might it be helpful in conjunction with this vector?
+
+vars &lt;- c(&quot;year&quot;, &quot;month&quot;, &quot;day&quot;, &quot;dep_delay&quot;, &quot;arr_delay&quot;)
+select(flights, one_of(vars))</code></pre>
+<pre><code>## # A tibble: 336,776 x 5
+##     year month   day dep_delay arr_delay
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+##  1  2013     1     1         2        11
+##  2  2013     1     1         4        20
+##  3  2013     1     1         2        33
+##  4  2013     1     1        -1       -18
+##  5  2013     1     1        -6       -25
+##  6  2013     1     1        -4        12
+##  7  2013     1     1        -5        19
+##  8  2013     1     1        -3       -14
+##  9  2013     1     1        -3        -8
+## 10  2013     1     1        -2         8
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code>#this only works if vars is not a column name in the flights data</code></pre>
+<pre class="r"><code>#4 Does the result of running the following code surpise you? How do the select helpers deal wit case by default? How can you change that default?
+
+select(flights, contains(&quot;TIME&quot;))</code></pre>
+<pre><code>## # A tibble: 336,776 x 6
+##    dep_time sched_dep_time arr_time sched_arr_time air_time time_hour          
+##       &lt;int&gt;          &lt;int&gt;    &lt;int&gt;          &lt;int&gt;    &lt;dbl&gt; &lt;dttm&gt;             
+##  1      517            515      830            819      227 2013-01-01 05:00:00
+##  2      533            529      850            830      227 2013-01-01 05:00:00
+##  3      542            540      923            850      160 2013-01-01 05:00:00
+##  4      544            545     1004           1022      183 2013-01-01 05:00:00
+##  5      554            600      812            837      116 2013-01-01 06:00:00
+##  6      554            558      740            728      150 2013-01-01 05:00:00
+##  7      555            600      913            854      158 2013-01-01 06:00:00
+##  8      557            600      709            723       53 2013-01-01 06:00:00
+##  9      557            600      838            846      140 2013-01-01 06:00:00
+## 10      558            600      753            745      138 2013-01-01 06:00:00
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code># it is ingores case
+
+select(flights, contains(&quot;TIME&quot;, ignore.case = FALSE))</code></pre>
+<pre><code>## # A tibble: 336,776 x 0</code></pre>
+<pre class="r"><code># changes the default behavior</code></pre>
+<div id="add-new-variables-with-mutate" class="section level3">
+<h3>5.5 Add New Variables with Mutate()</h3>
+<p>Mutate(): Adds new columns that are functions of existing columns; adds columns to the end of your dataset</p>
+<pre class="r"><code>flights_sml &lt;- select(flights, 
+  year:day, 
+  ends_with(&quot;delay&quot;), 
+  distance, 
+  air_time
+)
+mutate(flights_sml,
+  gain = dep_delay - arr_delay,
+  speed = distance / air_time * 60
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 9
+##     year month   day dep_delay arr_delay distance air_time  gain speed
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  2013     1     1         2        11     1400      227    -9  370.
+##  2  2013     1     1         4        20     1416      227   -16  374.
+##  3  2013     1     1         2        33     1089      160   -31  408.
+##  4  2013     1     1        -1       -18     1576      183    17  517.
+##  5  2013     1     1        -6       -25      762      116    19  394.
+##  6  2013     1     1        -4        12      719      150   -16  288.
+##  7  2013     1     1        -5        19     1065      158   -24  404.
+##  8  2013     1     1        -3       -14      229       53    11  259.
+##  9  2013     1     1        -3        -8      944      140     5  405.
+## 10  2013     1     1        -2         8      733      138   -10  319.
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code># can refer to the columns that were just created
+mutate(flights_sml,
+  gain = dep_delay - arr_delay,
+  hours = air_time / 60,
+  gain_per_hour = gain / hours
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 10
+##     year month   day dep_delay arr_delay distance air_time  gain hours
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  2013     1     1         2        11     1400      227    -9 3.78 
+##  2  2013     1     1         4        20     1416      227   -16 3.78 
+##  3  2013     1     1         2        33     1089      160   -31 2.67 
+##  4  2013     1     1        -1       -18     1576      183    17 3.05 
+##  5  2013     1     1        -6       -25      762      116    19 1.93 
+##  6  2013     1     1        -4        12      719      150   -16 2.5  
+##  7  2013     1     1        -5        19     1065      158   -24 2.63 
+##  8  2013     1     1        -3       -14      229       53    11 0.883
+##  9  2013     1     1        -3        -8      944      140     5 2.33 
+## 10  2013     1     1        -2         8      733      138   -10 2.3  
+## # … with 336,766 more rows, and 1 more variable: gain_per_hour &lt;dbl&gt;</code></pre>
+<pre class="r"><code># only want to keep the new variables, use the transmute()
+transmute(flights,
+  gain = dep_delay - arr_delay,
+  hours = air_time / 60,
+  gain_per_hour = gain / hours
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##     gain hours gain_per_hour
+##    &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;
+##  1    -9 3.78          -2.38
+##  2   -16 3.78          -4.23
+##  3   -31 2.67         -11.6 
+##  4    17 3.05           5.57
+##  5    19 1.93           9.83
+##  6   -16 2.5           -6.4 
+##  7   -24 2.63          -9.11
+##  8    11 0.883         12.5 
+##  9     5 2.33           2.14
+## 10   -10 2.3           -4.35
+## # … with 336,766 more rows</code></pre>
+<div id="useful-creation-functions" class="section level4">
+<h4>5.5.1 Useful Creation Functions</h4>
+<ul>
+<li>Arithmetic operators: +, -, *, /, ^
+<ul>
+<li>Arithmetic operators are also useful in conjunction with the aggregate functions</li>
+<li>Not affected by group_by()</li>
+</ul></li>
+<li>Modular arithmetic: %/% (integer division) and %% (remainder), where x == y * (x %/% y) + (x %% y)
+<ul>
+<li>Breaks integers into pieces</li>
+<li>Not affected by group_by()</li>
+</ul></li>
+</ul>
+<pre class="r"><code># example
+transmute(flights,
+  dep_time,
+  hour = dep_time %/% 100,
+  minute = dep_time %% 100
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    dep_time  hour minute
+##       &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;
+##  1      517     5     17
+##  2      533     5     33
+##  3      542     5     42
+##  4      544     5     44
+##  5      554     5     54
+##  6      554     5     54
+##  7      555     5     55
+##  8      557     5     57
+##  9      557     5     57
+## 10      558     5     58
+## # … with 336,766 more rows</code></pre>
+<ul>
+<li>Logs: log(), log2(), log10().
+<ul>
+<li>log2(): easy to interpret</li>
+<li>Not affected by group_by()</li>
+</ul></li>
+<li>Offsets: lead() and lag() allow you to refer to leading or lagging values
+<ul>
+<li>Respect the groupings of group_by()</li>
+</ul></li>
+<li>Cumulative and rolling aggregates: R provides functions for running sums, products, mins and maxes: cumsum(), cumprod(), cummin(), cummax(); and dplyr provides cummean() for cumulative means
+<ul>
+<li>Calculate the total within each group</li>
+</ul></li>
+<li>Logical comparisons, &lt;, &lt;=, &gt;, &gt;=, !=, and ==
+<ul>
+<li>Not affected by group_by()</li>
+</ul></li>
+<li>Ranking: there are a number of ranking functions, but you should start with min_rank()
+<ul>
+<li>Default gives smallest values; use desc(x) to give the largest values</li>
+<li>Follow within in each group when used with group_by()</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="exercises-8" class="section level2">
+<h2>5.5.2 Exercises</h2>
+<pre class="r"><code>#1 Currently dep_time and sched_dep_time are convenient to look at, but hard to compute with because they're not really continuous numbers. Convert them to a more convenient represenation of number of minutes since midnight.
+
+
+#divide dep_time by 100 to get hours since midnight, then mulitply by 60 to get minutes. Get the remainder of the dep_time and add the reaminding minutes. The 1440 represents midnight by converting it to 0.
+flights_times &lt;- mutate(flights,dep_time_mins = (dep_time %/% 100 * 60 + dep_time %% 100) %% 1440,sched_dep_time_mins = (sched_dep_time %/% 100 * 60 + sched_dep_time %% 100) %% 1440
+)
+# view columns
+select(
+  flights_times, dep_time, dep_time_mins, sched_dep_time,
+  sched_dep_time_mins
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 4
+##    dep_time dep_time_mins sched_dep_time sched_dep_time_mins
+##       &lt;int&gt;         &lt;dbl&gt;          &lt;int&gt;               &lt;dbl&gt;
+##  1      517           317            515                 315
+##  2      533           333            529                 329
+##  3      542           342            540                 340
+##  4      544           344            545                 345
+##  5      554           354            600                 360
+##  6      554           354            558                 358
+##  7      555           355            600                 360
+##  8      557           357            600                 360
+##  9      557           357            600                 360
+## 10      558           358            600                 360
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code>#2 Compare air_time and arr_time - dep_time. What do you expect to see? What do you see? What do you need to do to fix it?
+
+# I would think that air_time = arr_time-dep_time.
+select(flights, air_time, arr_time, dep_time)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    air_time arr_time dep_time
+##       &lt;dbl&gt;    &lt;int&gt;    &lt;int&gt;
+##  1      227      830      517
+##  2      227      850      533
+##  3      160      923      542
+##  4      183     1004      544
+##  5      116      812      554
+##  6      150      740      554
+##  7      158      913      555
+##  8       53      709      557
+##  9      140      838      557
+## 10      138      753      558
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code># The arr_time and dep_time need to be converted to minutes from midnight like #1 to get a true comparison.</code></pre>
+<pre class="r"><code>#3 Compare dep_time, sched_dep_time, and dep_delay. How would you expect those three numbers to be related?
+
+# I would expect the dep_delay = dep_time - sched_dep_time
+select(flights, dep_time, sched_dep_time, dep_delay)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    dep_time sched_dep_time dep_delay
+##       &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;
+##  1      517            515         2
+##  2      533            529         4
+##  3      542            540         2
+##  4      544            545        -1
+##  5      554            600        -6
+##  6      554            558        -4
+##  7      555            600        -5
+##  8      557            600        -3
+##  9      557            600        -3
+## 10      558            600        -2
+## # … with 336,766 more rows</code></pre>
+<pre class="r"><code># To get a true comparison, then the numbers would need to be converted to minutes from midnight. </code></pre>
+<pre class="r"><code>#4 Find the 10 most delayed flights using a ranking function. How do you want to handle ties? Carefully read the documentation for min_rank().
+
+flights %&gt;%
+  filter(min_rank(-(dep_delay)) %in% 1:10)</code></pre>
+<pre><code>## # A tibble: 10 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     1    10     1121           1635      1126     1239           1810
+##  3  2013    12     5      756           1700       896     1058           2020
+##  4  2013     3    17     2321            810       911      135           1020
+##  5  2013     4    10     1100           1900       960     1342           2211
+##  6  2013     6    15     1432           1935      1137     1607           2120
+##  7  2013     6    27      959           1900       899     1236           2226
+##  8  2013     7    22      845           1600      1005     1044           1815
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013     9    20     1139           1845      1014     1457           2210
+## # … with 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,
+## #   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,
+## #   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>#4 What does 1:3 + 1:10 return? Why?
+1:3 + 1:10</code></pre>
+<pre><code>## Warning in 1:3 + 1:10: longer object length is not a multiple of shorter object
+## length</code></pre>
+<pre><code>##  [1]  2  4  6  5  7  9  8 10 12 11</code></pre>
+<pre class="r"><code># Returns a warning; could indicate a bug</code></pre>
+<pre class="r"><code>#6 What trignometric function does R provide?
+
+#sin(), cos(), tan()</code></pre>
+<div id="grouped-summaries-with-summarise" class="section level3">
+<h3>5.6 Grouped Summaries with Summarise()</h3>
+<pre class="r"><code># Collapses data frame to a single row
+summarise(flights, delay = mean(dep_delay, na.rm = TRUE))</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   delay
+##   &lt;dbl&gt;
+## 1  12.6</code></pre>
+<pre class="r"><code># Summarise() is more useful when paired with group_by()
+by_day &lt;- group_by (flights, year, month, day)
+summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day delay
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1  2013     1     1 11.5 
+##  2  2013     1     2 13.9 
+##  3  2013     1     3 11.0 
+##  4  2013     1     4  8.95
+##  5  2013     1     5  5.73
+##  6  2013     1     6  7.15
+##  7  2013     1     7  5.42
+##  8  2013     1     8  2.55
+##  9  2013     1     9  2.28
+## 10  2013     1    10  2.84
+## # … with 355 more rows</code></pre>
+<div id="combining-mulitple-operations-with-the-pipe" class="section level4">
+<h4>5.6.1 Combining Mulitple Operations with the Pipe</h4>
+<pre class="r"><code>by_dest &lt;- group_by(flights, dest)
+delay &lt;- summarise(by_dest,
+  count = n(),
+  dist = mean(distance, na.rm = TRUE),
+  delay = mean(arr_delay, na.rm = TRUE)
+)
+delay &lt;- filter(delay, count &gt; 20, dest != &quot;HNL&quot;)</code></pre>
+<pre class="r"><code># Same problem using the pipe %&gt;%
+# Focuses on the transformations, not what's being transformed
+delays &lt;- flights %&gt;% 
+  group_by(dest) %&gt;% 
+  summarise(
+    count = n(),
+    dist = mean(distance, na.rm = TRUE),
+    delay = mean(arr_delay, na.rm = TRUE)
+  ) %&gt;% 
+  filter(count &gt; 20, dest != &quot;HNL&quot;)</code></pre>
+</div>
+<div id="missing-values-2" class="section level4">
+<h4>5.6.2 Missing Values</h4>
+<pre class="r"><code># The na.rm produces a lot of missing values
+flights %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(mean = mean(dep_delay))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day  mean
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1  2013     1     1    NA
+##  2  2013     1     2    NA
+##  3  2013     1     3    NA
+##  4  2013     1     4    NA
+##  5  2013     1     5    NA
+##  6  2013     1     6    NA
+##  7  2013     1     7    NA
+##  8  2013     1     8    NA
+##  9  2013     1     9    NA
+## 10  2013     1    10    NA
+## # … with 355 more rows</code></pre>
+<pre class="r"><code># Removes the missing values
+flights %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(mean = mean(dep_delay, na.rm = TRUE))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day  mean
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1  2013     1     1 11.5 
+##  2  2013     1     2 13.9 
+##  3  2013     1     3 11.0 
+##  4  2013     1     4  8.95
+##  5  2013     1     5  5.73
+##  6  2013     1     6  7.15
+##  7  2013     1     7  5.42
+##  8  2013     1     8  2.55
+##  9  2013     1     9  2.28
+## 10  2013     1    10  2.84
+## # … with 355 more rows</code></pre>
+<pre class="r"><code># Takes into account of the cancelled flights
+not_cancelled &lt;- flights %&gt;% 
+  filter(!is.na(dep_delay), !is.na(arr_delay))
+
+not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(mean = mean(dep_delay))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day  mean
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1  2013     1     1 11.4 
+##  2  2013     1     2 13.7 
+##  3  2013     1     3 10.9 
+##  4  2013     1     4  8.97
+##  5  2013     1     5  5.73
+##  6  2013     1     6  7.15
+##  7  2013     1     7  5.42
+##  8  2013     1     8  2.56
+##  9  2013     1     9  2.30
+## 10  2013     1    10  2.84
+## # … with 355 more rows</code></pre>
+</div>
+<div id="counts" class="section level4">
+<h4>5.6.3 Counts</h4>
+<p>Good idea to include: count(n()) or (sum(!is.na(x))) to avoid conclusions based on small amounts of data</p>
+<pre class="r"><code>delays &lt;- not_cancelled %&gt;% 
+  group_by(tailnum) %&gt;% 
+  summarise(
+    delay = mean(arr_delay)
+  )</code></pre>
+<pre class="r"><code>delays &lt;- not_cancelled %&gt;% 
+  group_by(tailnum) %&gt;% 
+  summarise(
+    delay = mean(arr_delay, na.rm = TRUE),
+    n = n()
+  )</code></pre>
+</div>
+<div id="useful-summary-functions" class="section level4">
+<h4>5.6.4 Useful Summary Functions</h4>
+<ul>
+<li>Measures of location: mean(x), median(x)</li>
+</ul>
+<pre class="r"><code>not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(
+    avg_delay1 = mean(arr_delay),
+    avg_delay2 = mean(arr_delay[arr_delay &gt; 0]) # the average positive delay
+  )</code></pre>
+<pre><code>## # A tibble: 365 x 5
+## # Groups:   year, month [12]
+##     year month   day avg_delay1 avg_delay2
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;      &lt;dbl&gt;      &lt;dbl&gt;
+##  1  2013     1     1     12.7         32.5
+##  2  2013     1     2     12.7         32.0
+##  3  2013     1     3      5.73        27.7
+##  4  2013     1     4     -1.93        28.3
+##  5  2013     1     5     -1.53        22.6
+##  6  2013     1     6      4.24        24.4
+##  7  2013     1     7     -4.95        27.8
+##  8  2013     1     8     -3.23        20.8
+##  9  2013     1     9     -0.264       25.6
+## 10  2013     1    10     -5.90        27.3
+## # … with 355 more rows</code></pre>
+<ul>
+<li>Measures of spread: sd(x), IQR(x), mad(x)</li>
+</ul>
+<pre class="r"><code>not_cancelled %&gt;% 
+  group_by(dest) %&gt;% 
+  summarise(distance_sd = sd(distance)) %&gt;% 
+  arrange(desc(distance_sd))</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest  distance_sd
+##    &lt;chr&gt;       &lt;dbl&gt;
+##  1 EGE         10.5 
+##  2 SAN         10.4 
+##  3 SFO         10.2 
+##  4 HNL         10.0 
+##  5 SEA          9.98
+##  6 LAS          9.91
+##  7 PDX          9.87
+##  8 PHX          9.86
+##  9 LAX          9.66
+## 10 IND          9.46
+## # … with 94 more rows</code></pre>
+<ul>
+<li>Measures of rank: min(x), quantile(x, 0.25), max(x)</li>
+</ul>
+<pre class="r"><code>not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(
+    first = min(dep_time),
+    last = max(dep_time)
+  )</code></pre>
+<pre><code>## # A tibble: 365 x 5
+## # Groups:   year, month [12]
+##     year month   day first  last
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1  2013     1     1   517  2356
+##  2  2013     1     2    42  2354
+##  3  2013     1     3    32  2349
+##  4  2013     1     4    25  2358
+##  5  2013     1     5    14  2357
+##  6  2013     1     6    16  2355
+##  7  2013     1     7    49  2359
+##  8  2013     1     8   454  2351
+##  9  2013     1     9     2  2252
+## 10  2013     1    10     3  2320
+## # … with 355 more rows</code></pre>
+<ul>
+<li>Measures of position: first(x), nth(x,2), last(x)</li>
+</ul>
+<pre class="r"><code>not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(
+    first_dep = first(dep_time), 
+    last_dep = last(dep_time)
+  )</code></pre>
+<pre><code>## # A tibble: 365 x 5
+## # Groups:   year, month [12]
+##     year month   day first_dep last_dep
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;int&gt;    &lt;int&gt;
+##  1  2013     1     1       517     2356
+##  2  2013     1     2        42     2354
+##  3  2013     1     3        32     2349
+##  4  2013     1     4        25     2358
+##  5  2013     1     5        14     2357
+##  6  2013     1     6        16     2355
+##  7  2013     1     7        49     2359
+##  8  2013     1     8       454     2351
+##  9  2013     1     9         2     2252
+## 10  2013     1    10         3     2320
+## # … with 355 more rows</code></pre>
+<pre class="r"><code># Complementary to measures of position
+not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  mutate(r = min_rank(desc(dep_time))) %&gt;% 
+  filter(r %in% range(r))</code></pre>
+<pre><code>## # A tibble: 770 x 20
+## # Groups:   year, month, day [365]
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1     2356           2359        -3      425            437
+##  3  2013     1     2       42           2359        43      518            442
+##  4  2013     1     2     2354           2359        -5      413            437
+##  5  2013     1     3       32           2359        33      504            442
+##  6  2013     1     3     2349           2359       -10      434            445
+##  7  2013     1     4       25           2359        26      505            442
+##  8  2013     1     4     2358           2359        -1      429            437
+##  9  2013     1     4     2358           2359        -1      436            445
+## 10  2013     1     5       14           2359        15      503            445
+## # … with 760 more rows, and 12 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;,
+## #   distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;, r &lt;int&gt;</code></pre>
+<ul>
+<li>Counts: n(), sum(!is.na(x)), n_distinct(x)</li>
+</ul>
+<pre class="r"><code>not_cancelled %&gt;% 
+  group_by(dest) %&gt;% 
+  summarise(carriers = n_distinct(carrier)) %&gt;% 
+  arrange(desc(carriers))</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest  carriers
+##    &lt;chr&gt;    &lt;int&gt;
+##  1 ATL          7
+##  2 BOS          7
+##  3 CLT          7
+##  4 ORD          7
+##  5 TPA          7
+##  6 AUS          6
+##  7 DCA          6
+##  8 DTW          6
+##  9 IAD          6
+## 10 MSP          6
+## # … with 94 more rows</code></pre>
+<pre class="r"><code>not_cancelled %&gt;% 
+  count(dest)</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest      n
+##    &lt;chr&gt; &lt;int&gt;
+##  1 ABQ     254
+##  2 ACK     264
+##  3 ALB     418
+##  4 ANC       8
+##  5 ATL   16837
+##  6 AUS    2411
+##  7 AVL     261
+##  8 BDL     412
+##  9 BGR     358
+## 10 BHM     269
+## # … with 94 more rows</code></pre>
+<pre class="r"><code># Total number of miles a plane flew
+not_cancelled %&gt;% 
+  count(tailnum, wt = distance)</code></pre>
+<pre><code>## # A tibble: 4,037 x 2
+##    tailnum      n
+##    &lt;chr&gt;    &lt;dbl&gt;
+##  1 D942DN    3418
+##  2 N0EGMQ  239143
+##  3 N10156  109664
+##  4 N102UW   25722
+##  5 N103US   24619
+##  6 N104UW   24616
+##  7 N10575  139903
+##  8 N105UW   23618
+##  9 N107US   21677
+## 10 N108UW   32070
+## # … with 4,027 more rows</code></pre>
+<pre class="r"><code># How many flights left before 5am? (these usually indicate delayed
+# flights from the previous day)
+not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(n_early = sum(dep_time &lt; 500))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day n_early
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;   &lt;int&gt;
+##  1  2013     1     1       0
+##  2  2013     1     2       3
+##  3  2013     1     3       4
+##  4  2013     1     4       3
+##  5  2013     1     5       3
+##  6  2013     1     6       2
+##  7  2013     1     7       2
+##  8  2013     1     8       1
+##  9  2013     1     9       3
+## 10  2013     1    10       3
+## # … with 355 more rows</code></pre>
+<pre class="r"><code># What proportion of flights are delayed by more than an hour?
+not_cancelled %&gt;% 
+  group_by(year, month, day) %&gt;% 
+  summarise(hour_prop = mean(arr_delay &gt; 60))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day hour_prop
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;
+##  1  2013     1     1    0.0722
+##  2  2013     1     2    0.0851
+##  3  2013     1     3    0.0567
+##  4  2013     1     4    0.0396
+##  5  2013     1     5    0.0349
+##  6  2013     1     6    0.0470
+##  7  2013     1     7    0.0333
+##  8  2013     1     8    0.0213
+##  9  2013     1     9    0.0202
+## 10  2013     1    10    0.0183
+## # … with 355 more rows</code></pre>
+</div>
+<div id="grouping-by-multiple-variables" class="section level4">
+<h4>5.6.5 Grouping by Multiple Variables</h4>
+<pre class="r"><code>daily &lt;- group_by(flights, year, month, day)
+(per_day   &lt;- summarise(daily, flights = n()))</code></pre>
+<pre><code>## # A tibble: 365 x 4
+## # Groups:   year, month [12]
+##     year month   day flights
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;   &lt;int&gt;
+##  1  2013     1     1     842
+##  2  2013     1     2     943
+##  3  2013     1     3     914
+##  4  2013     1     4     915
+##  5  2013     1     5     720
+##  6  2013     1     6     832
+##  7  2013     1     7     933
+##  8  2013     1     8     899
+##  9  2013     1     9     902
+## 10  2013     1    10     932
+## # … with 355 more rows</code></pre>
+<pre class="r"><code>(per_month &lt;- summarise(per_day, flights = sum(flights)))</code></pre>
+<pre><code>## # A tibble: 12 x 3
+## # Groups:   year [1]
+##     year month flights
+##    &lt;int&gt; &lt;int&gt;   &lt;int&gt;
+##  1  2013     1   27004
+##  2  2013     2   24951
+##  3  2013     3   28834
+##  4  2013     4   28330
+##  5  2013     5   28796
+##  6  2013     6   28243
+##  7  2013     7   29425
+##  8  2013     8   29327
+##  9  2013     9   27574
+## 10  2013    10   28889
+## 11  2013    11   27268
+## 12  2013    12   28135</code></pre>
+<pre class="r"><code>(per_year  &lt;- summarise(per_month, flights = sum(flights)))</code></pre>
+<pre><code>## # A tibble: 1 x 2
+##    year flights
+##   &lt;int&gt;   &lt;int&gt;
+## 1  2013  336776</code></pre>
+</div>
+<div id="ungrouping" class="section level4">
+<h4>5.6.6 Ungrouping</h4>
+<pre class="r"><code>daily %&gt;% 
+  ungroup() %&gt;%             # no longer grouped by date
+  summarise(flights = n())  # all flights</code></pre>
+<pre><code>## # A tibble: 1 x 1
+##   flights
+##     &lt;int&gt;
+## 1  336776</code></pre>
+</div>
+</div>
+</div>
+<div id="exercises-9" class="section level2">
+<h2>5.6.7 Exercises</h2>
+<pre class="r"><code>#1 Brainstorm at least 5 different ways to assess the typical dealy characteristics of a group of flights.
+delay_char &lt;-
+  flights %&gt;%
+  group_by(flight) %&gt;%
+  summarise(n = n(),
+            fif_early = mean(arr_delay == -15, na.rm = TRUE),
+            fif_late = mean(arr_delay == 15, na.rm = TRUE),
+            ten_always = mean(arr_delay == 10, na.rm = TRUE),
+            thirty_early = mean(arr_delay == -30, na.rm = TRUE),
+            thirty_late = mean(arr_delay == 30, na.rm = TRUE),
+            per_on_time = mean(arr_delay == 0, na.rm = TRUE),
+            two_hours = mean(arr_delay &gt; 120, na.rm = TRUE))
+
+#A flight is 15 minutes early 50% of the time, and 15 minutes late 50% of the time.
+
+delay_char %&gt;%
+  filter(fif_early == 0.5, fif_late == 0.5)</code></pre>
+<pre><code>## # A tibble: 0 x 9
+## # … with 9 variables: flight &lt;int&gt;, n &lt;int&gt;, fif_early &lt;dbl&gt;, fif_late &lt;dbl&gt;,
+## #   ten_always &lt;dbl&gt;, thirty_early &lt;dbl&gt;, thirty_late &lt;dbl&gt;, per_on_time &lt;dbl&gt;,
+## #   two_hours &lt;dbl&gt;</code></pre>
+<pre class="r"><code>#A flight is always 10 minutes late.
+
+delay_char %&gt;%
+  filter(ten_always == 1)</code></pre>
+<pre><code>## # A tibble: 5 x 9
+##   flight     n fif_early fif_late ten_always thirty_early thirty_late
+##    &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;
+## 1   2254     1         0        0          1            0           0
+## 2   3656     1         0        0          1            0           0
+## 3   3785     2         0        0          1            0           0
+## 4   3880     1         0        0          1            0           0
+## 5   5854     1         0        0          1            0           0
+## # … with 2 more variables: per_on_time &lt;dbl&gt;, two_hours &lt;dbl&gt;</code></pre>
+<pre class="r"><code>#A flight is 30 minutes early 50% of the time, and 30 minutes late 50% of the time.
+
+delay_char %&gt;%
+  filter(thirty_early == 0.5 &amp; thirty_late == 0.5)</code></pre>
+<pre><code>## # A tibble: 0 x 9
+## # … with 9 variables: flight &lt;int&gt;, n &lt;int&gt;, fif_early &lt;dbl&gt;, fif_late &lt;dbl&gt;,
+## #   ten_always &lt;dbl&gt;, thirty_early &lt;dbl&gt;, thirty_late &lt;dbl&gt;, per_on_time &lt;dbl&gt;,
+## #   two_hours &lt;dbl&gt;</code></pre>
+<pre class="r"><code>#99% of the time a flight is on time. 1% of the time it’s 2 hours late.
+
+delay_char %&gt;%
+  filter(per_on_time == 0.99 &amp; two_hours == 0.01)</code></pre>
+<pre><code>## # A tibble: 0 x 9
+## # … with 9 variables: flight &lt;int&gt;, n &lt;int&gt;, fif_early &lt;dbl&gt;, fif_late &lt;dbl&gt;,
+## #   ten_always &lt;dbl&gt;, thirty_early &lt;dbl&gt;, thirty_late &lt;dbl&gt;, per_on_time &lt;dbl&gt;,
+## #   two_hours &lt;dbl&gt;</code></pre>
+<pre class="r"><code># Which is more important: arrival delay or departure delay?
+# Arrival delay is mort important because it can affect the following flights/connector flights. </code></pre>
+<pre class="r"><code>#2 Come up with another approach that will give you the same output as not_cancelled %&gt;% count(dest) and not_cancelled %&gt;% count(tailnum, wt = distance) (without using count()).
+
+not_cancelled %&gt;% count(dest)</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest      n
+##    &lt;chr&gt; &lt;int&gt;
+##  1 ABQ     254
+##  2 ACK     264
+##  3 ALB     418
+##  4 ANC       8
+##  5 ATL   16837
+##  6 AUS    2411
+##  7 AVL     261
+##  8 BDL     412
+##  9 BGR     358
+## 10 BHM     269
+## # … with 94 more rows</code></pre>
+<pre class="r"><code>not_cancelled %&gt;%
+  group_by(dest) %&gt;%
+  summarise(n = length(dest))</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest      n
+##    &lt;chr&gt; &lt;int&gt;
+##  1 ABQ     254
+##  2 ACK     264
+##  3 ALB     418
+##  4 ANC       8
+##  5 ATL   16837
+##  6 AUS    2411
+##  7 AVL     261
+##  8 BDL     412
+##  9 BGR     358
+## 10 BHM     269
+## # … with 94 more rows</code></pre>
+<pre class="r"><code>#3 Our defintion of cancelled flights (is.na(dep_delay)) | is.na(arr_delay)) is slightly suboptimal. Why? Which is the most important column?
+
+#The most important column is the arr_delay. The definition is suboptimal because if a flight never left, then it was cancelled.</code></pre>
+<pre class="r"><code>#4 Look at the number of cancelled flights per day. Is there a pattern? Is the proportion of cancelled flights related to the average delay?
+flights%&gt;% 
+  group_by(day) %&gt;%
+  summarise(cancelled = mean(is.na(dep_delay)))</code></pre>
+<pre><code>## # A tibble: 31 x 2
+##      day cancelled
+##    &lt;int&gt;     &lt;dbl&gt;
+##  1     1   0.0223 
+##  2     2   0.0231 
+##  3     3   0.00972
+##  4     4   0.00741
+##  5     5   0.0208 
+##  6     6   0.0268 
+##  7     7   0.0289 
+##  8     8   0.0817 
+##  9     9   0.0546 
+## 10    10   0.0477 
+## # … with 21 more rows</code></pre>
+<pre class="r"><code># I'm not sure what the pattern is.</code></pre>
+<pre class="r"><code>#5 Which carrier has the worst delays? Challenge: Can you disentangle the effects of bad airports vs. bad carriers? Why/why not?
+flights %&gt;%
+  group_by(carrier) %&gt;%
+  summarise(arr_delay = mean(arr_delay, na.rm = TRUE)) %&gt;%
+  arrange(desc(arr_delay))</code></pre>
+<pre><code>## # A tibble: 16 x 2
+##    carrier arr_delay
+##    &lt;chr&gt;       &lt;dbl&gt;
+##  1 F9         21.9  
+##  2 FL         20.1  
+##  3 EV         15.8  
+##  4 YV         15.6  
+##  5 OO         11.9  
+##  6 MQ         10.8  
+##  7 WN          9.65 
+##  8 B6          9.46 
+##  9 9E          7.38 
+## 10 UA          3.56 
+## 11 US          2.13 
+## 12 VX          1.76 
+## 13 DL          1.64 
+## 14 AA          0.364
+## 15 HA         -6.92 
+## 16 AS         -9.93</code></pre>
+<pre class="r"><code># I'm confused by the challenge question. F9 is the worst carrier. Would you look at the airports that it goes to?</code></pre>
+<pre class="r"><code>#6 What does the sort argument to count() do. When might you use it?
+
+#Sorts the results in the order of 'n'; Sorts based on the count</code></pre>
+<div id="grouped-mutates-and-filters" class="section level3">
+<h3>5.7 Grouped Mutates (and Filters)</h3>
+<pre class="r"><code>flights_sml %&gt;% 
+  group_by(year, month, day) %&gt;%
+  filter(rank(desc(arr_delay)) &lt; 10)</code></pre>
+<pre><code>## # A tibble: 3,306 x 7
+## # Groups:   year, month, day [365]
+##     year month   day dep_delay arr_delay distance air_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+##  1  2013     1     1       853       851      184       41
+##  2  2013     1     1       290       338     1134      213
+##  3  2013     1     1       260       263      266       46
+##  4  2013     1     1       157       174      213       60
+##  5  2013     1     1       216       222      708      121
+##  6  2013     1     1       255       250      589      115
+##  7  2013     1     1       285       246     1085      146
+##  8  2013     1     1       192       191      199       44
+##  9  2013     1     1       379       456     1092      222
+## 10  2013     1     2       224       207      550       94
+## # … with 3,296 more rows</code></pre>
+<pre class="r"><code>popular_dests &lt;- flights %&gt;% 
+  group_by(dest) %&gt;% 
+  filter(n() &gt; 365)
+popular_dests</code></pre>
+<pre><code>## # A tibble: 332,577 x 19
+## # Groups:   dest [77]
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 332,567 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>popular_dests %&gt;% 
+  filter(arr_delay &gt; 0) %&gt;% 
+  mutate(prop_delay = arr_delay / sum(arr_delay)) %&gt;% 
+  select(year:day, dest, arr_delay, prop_delay)</code></pre>
+<pre><code>## # A tibble: 131,106 x 6
+## # Groups:   dest [77]
+##     year month   day dest  arr_delay prop_delay
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt;
+##  1  2013     1     1 IAH          11  0.000111 
+##  2  2013     1     1 IAH          20  0.000201 
+##  3  2013     1     1 MIA          33  0.000235 
+##  4  2013     1     1 ORD          12  0.0000424
+##  5  2013     1     1 FLL          19  0.0000938
+##  6  2013     1     1 ORD           8  0.0000283
+##  7  2013     1     1 LAX           7  0.0000344
+##  8  2013     1     1 DFW          31  0.000282 
+##  9  2013     1     1 ATL          12  0.0000400
+## 10  2013     1     1 DTW          16  0.000116 
+## # … with 131,096 more rows</code></pre>
+</div>
+</div>
+<div id="exercises-10" class="section level2">
+<h2>5.7.1 Exercises</h2>
+<pre class="r"><code>#1 Refer back to the lists of useful mutate and filtering functions. Describe how each operation changes when you combine it with grouping.
+
+# See #### 5.5.1 Useful Creation Functions for notes</code></pre>
+<pre class="r"><code>#2 Which plane(tailnum) has the worst on-time record?
+
+flights %&gt;%
+  filter(!is.na(arr_delay)) %&gt;%
+  group_by(tailnum) %&gt;%
+  summarise(prop_time = sum(arr_delay &lt;= 30)/n(),
+            mean_arr = mean(arr_delay, na.rm = T),
+            fl = n()) %&gt;%
+  arrange(desc(prop_time))</code></pre>
+<pre><code>## # A tibble: 4,037 x 4
+##    tailnum prop_time mean_arr    fl
+##    &lt;chr&gt;       &lt;dbl&gt;    &lt;dbl&gt; &lt;int&gt;
+##  1 N103US          1    -6.93    46
+##  2 N1200K          1    -9.38    21
+##  3 N121DE          1    15        2
+##  4 N137DL          1    -5        1
+##  5 N143DA          1    24        1
+##  6 N14628          1    -6        1
+##  7 N14629          1   -16.2      4
+##  8 N1607B          1   -16        3
+##  9 N1608           1   -11.3      3
+## 10 N1610D          1   -14.5      2
+## # … with 4,027 more rows</code></pre>
+<pre class="r"><code>#3 What time of day should you fly if you want to avoid delays as much as possible?
+
+# Grouped by hour to get the time of day
+flights %&gt;%
+  group_by(hour) %&gt;%
+  summarise(arr_delay = mean(arr_delay, na.rm = TRUE)) %&gt;%
+  arrange(arr_delay)</code></pre>
+<pre><code>## # A tibble: 20 x 2
+##     hour arr_delay
+##    &lt;dbl&gt;     &lt;dbl&gt;
+##  1     7    -5.30 
+##  2     5    -4.80 
+##  3     6    -3.38 
+##  4     9    -1.45 
+##  5     8    -1.11 
+##  6    10     0.954
+##  7    11     1.48 
+##  8    12     3.49 
+##  9    13     6.54 
+## 10    14     9.20 
+## 11    23    11.8  
+## 12    15    12.3  
+## 13    16    12.6  
+## 14    18    14.8  
+## 15    22    16.0  
+## 16    17    16.0  
+## 17    19    16.7  
+## 18    20    16.7  
+## 19    21    18.4  
+## 20     1   NaN</code></pre>
+<pre class="r"><code># Morning flights have less delays</code></pre>
+<pre class="r"><code>#4 For each destination, compute the total minutes of delay. For each flight, compute the proportion of the delay for its destination.
+flights %&gt;%
+  group_by(dest) %&gt;%
+  filter(!is.na(dep_delay)) %&gt;%
+  summarise(total=sum(dep_delay))</code></pre>
+<pre><code>## # A tibble: 104 x 2
+##    dest   total
+##    &lt;chr&gt;  &lt;dbl&gt;
+##  1 ABQ     3490
+##  2 ACK     1711
+##  3 ALB     9897
+##  4 ANC      103
+##  5 ATL   211391
+##  6 AUS    31496
+##  7 AVL     2154
+##  8 BDL     7301
+##  9 BGR     7011
+## 10 BHM     8077
+## # … with 94 more rows</code></pre>
+<pre class="r"><code>flights%&gt;%
+  group_by(dest, tailnum)%&gt;%
+  filter(!is.na(dep_delay)) %&gt;%
+  summarise(avg=mean(dep_delay))</code></pre>
+<pre><code>## # A tibble: 44,218 x 3
+## # Groups:   dest [104]
+##    dest  tailnum   avg
+##    &lt;chr&gt; &lt;chr&gt;   &lt;dbl&gt;
+##  1 ABQ   N503JB   10  
+##  2 ABQ   N504JB    9.5
+##  3 ABQ   N505JB    0  
+##  4 ABQ   N506JB   15  
+##  5 ABQ   N507JB    3  
+##  6 ABQ   N508JB   -3.5
+##  7 ABQ   N509JB    4.5
+##  8 ABQ   N510JB    7.5
+##  9 ABQ   N517JB   -2  
+## 10 ABQ   N519JB   53  
+## # … with 44,208 more rows</code></pre>
+<pre class="r"><code>#5 Delays are typically temporally correlated: even once the problem that caused the initial delay has been resolved, later flights are delayed to allow earlier flights to leave. Using lag(), explore how the delay of a flight is related to the delay of the immediately preceding flight.
+flights%&gt;%
+  group_by(origin)%&gt;%
+  arrange(origin,month,day,dep_time)%&gt;%
+  mutate(dep_delay_lag = lag(dep_delay)) %&gt;%
+  filter(!is.na(dep_delay), !is.na(dep_delay_lag))</code></pre>
+<pre><code>## # A tibble: 327,649 x 20
+## # Groups:   origin [3]
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      554            558        -4      740            728
+##  2  2013     1     1      555            600        -5      913            854
+##  3  2013     1     1      558            600        -2      923            937
+##  4  2013     1     1      559            600        -1      854            902
+##  5  2013     1     1      601            600         1      844            850
+##  6  2013     1     1      606            610        -4      858            910
+##  7  2013     1     1      607            607         0      858            915
+##  8  2013     1     1      608            600         8      807            735
+##  9  2013     1     1      615            615         0      833            842
+## 10  2013     1     1      622            630        -8     1017           1014
+## # … with 327,639 more rows, and 12 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;,
+## #   dep_delay_lag &lt;dbl&gt;</code></pre>
+<pre class="r"><code>#6 Look at each destination. Can you find flights that are suspiciously fast? Compute the air time of a flight relative to the shortest flight to that destination. Which flights were most delayed in the air?
+
+flights %&gt;%
+  group_by(dest) %&gt;%
+  mutate(shortest = air_time - min(air_time, na.rm = TRUE)) %&gt;%
+  top_n(1, air_time) %&gt;%
+  arrange(desc(air_time)) %&gt;%
+  select(tailnum, sched_dep_time, sched_arr_time, shortest)</code></pre>
+<pre><code>## Warning in min(air_time, na.rm = TRUE): no non-missing arguments to min;
+## returning Inf</code></pre>
+<pre><code>## Adding missing grouping variables: `dest`</code></pre>
+<pre><code>## # A tibble: 112 x 5
+## # Groups:   dest [104]
+##    dest  tailnum sched_dep_time sched_arr_time shortest
+##    &lt;chr&gt; &lt;chr&gt;            &lt;int&gt;          &lt;int&gt;    &lt;dbl&gt;
+##  1 HNL   N77066            1335           1836      133
+##  2 SFO   N703TW            1730           2110      195
+##  3 LAX   N178DN            1815           2146      165
+##  4 ANC   N572UA            1615           1953       46
+##  5 SAN   N794JB            1620           1934      134
+##  6 SNA   N16709            1819           2137      131
+##  7 BUR   N624JB            1730           2046      110
+##  8 LAS   N852UA            1729           2013      143
+##  9 SJC   N632JB            1830           2205       91
+## 10 SEA   N17245            1727           2040      119
+## # … with 102 more rows</code></pre>
+<pre class="r"><code>#7 Find all the destinations that are flown by at least two carriers. Use that information to rank the carriers.
+
+flights %&gt;%
+  group_by(dest) %&gt;%
+  filter(n_distinct(carrier) &gt;= 2) %&gt;%
+  group_by(carrier) %&gt;%
+  summarise(n = n_distinct(dest)) %&gt;%
+  arrange(desc(n))</code></pre>
+<pre><code>## # A tibble: 16 x 2
+##    carrier     n
+##    &lt;chr&gt;   &lt;int&gt;
+##  1 EV         51
+##  2 9E         48
+##  3 UA         42
+##  4 DL         39
+##  5 B6         35
+##  6 AA         19
+##  7 MQ         19
+##  8 WN         10
+##  9 OO          5
+## 10 US          5
+## 11 VX          4
+## 12 YV          3
+## 13 FL          2
+## 14 AS          1
+## 15 F9          1
+## 16 HA          1</code></pre>
+<pre class="r"><code>#8 For each plan, count the number of flights before the first delay of greater than 1 hour.
+
+flights %&gt;%
+   filter(!is.na(dep_delay)) %&gt;%
+   group_by(tailnum) %&gt;%
+   mutate(total = sum(dep_delay &gt; 60))</code></pre>
+<pre><code>## # A tibble: 328,521 x 20
+## # Groups:   tailnum [4,037]
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # … with 328,511 more rows, and 12 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;,
+## #   total &lt;int&gt;</code></pre>
 </div>
 </div>
 
